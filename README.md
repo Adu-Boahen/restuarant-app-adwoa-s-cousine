@@ -9,7 +9,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -22,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+[](screenshot.png)
 
 ### Links
 

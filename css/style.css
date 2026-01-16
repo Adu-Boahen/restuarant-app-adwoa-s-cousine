@@ -301,7 +301,7 @@ nav a:hover {
 .locationSection {
     width: 100%;
     padding: 2rem 1%;
-
+    background-color: var(--white-color);
 }
 
 .locationSection h2 {
@@ -331,42 +331,212 @@ nav a:hover {
     width: 61%;
    
 }
+.locationSection .container .displayMap iframe{
+    width:100%;
+    height:90vh;
+    border:none;
+}
 .locationSection .container .locationCard{
     width:34%;
-    padding:1em;
-    border-radius: 2em;
-    background-color: var(--main-color);
+    background-color: #ffff;
 }
 .container .locationCard .locationImage{
     width:100%;
     object-fit: cover;
     height: 340px;
-    border-radius: 2em 2em 0px 0px;
-    margin-bottom: 10px;
 }
 
-.locationCard h2{
-    font-size: 1.1em;
-    color:#fff;
+.locationCard h4{
+    font-size: 1.9em;
+    color:#000;
+    padding:3px 12px;
+    text-align: left;
 }
 .locationCard .ratings{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding:0% 12px 12px;
+}
+.locationCard .ratings .stars img{
+    width: 33px;
+    margin-left: 5px;
+
+}
+.locationCard .ratings b{
+    font-size: 1.45em;
+    color: #000;
+    margin-right: 12px;
+    margin-left: 10px;
+}   
+
+.locationCard .locationDetails{
+    padding:0% 12px 12px;
+    font-size: 1.2em;
+    color:#000;
+}
+.locationCard .contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding:0% 12px 12px;
+}
+.locationCard .contact img{
+    width: 25px;
+}
+.locationCard .contact span{
+    font-size: 1.2em;
+    color:#000;
+}
+.locationCard .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 12px;
+    width: 100%;
+    padding: 0% 12px;
+    margin-bottom: 20px;
+}
+.locationCard .buttons a{
+    padding:10px 20px;
+    font-size: 1.2em;
+    color:#fff;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    width: 50%;
+}
+.locationCard .buttons a:hover{
+    background-color: var(--second-color);
+    transform: scale(1.1);
 }
 
+/*---===========testimonials0-section=========-*/
+.wrapper .testimonials {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/restuarants3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+}
 
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color:#fff;
+}
 
+.subtitle {
+  color: #666;
+  color:#fff;
+  margin-bottom: 40px;
+}
 
+.slider {
+  position: relative;
+  max-width: 650px;
+  margin: auto;
+  overflow: hidden;
+}
 
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
+.testimonial-card {
+    width: 100%;
+  min-width: 100%;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
+.message {
+  font-style: italic;
+  margin-bottom: 25px;
+  color: #444;
+  font-size:1.5em;
+}
 
+.client {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
 
+.client img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+.client h4 {
+  margin: 0;
+  font-size: 1.7em;
 
+}
 
+.client span {
+  font-size: 0.9rem;
+  color: #777;
+}
 
+.stars {
+  margin-top: 15px;
+  color: #f5a623;
+  font-size: 2rem;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.nav:hover {
+  background: #555;
+}
+
+/*--===========contact-section=========--*/
+.contactSection {
+    width: 100%;
+    padding: 2rem 1%;
+    background-color: var(--second-color);
+}       
+.contactSection h2 {
+    font-size: calc(var(--heading-size) - 0.7em);
+    color: #fff;
+    margin: 30px auto;
+    text-align: center;
+    z-index: 67;
+    text-align: center;
+}
+.contactSection h2 strong {
+    color: var(--main-color);
+    padding:5px 8px;
+}
 
 
 

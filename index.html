@@ -15,7 +15,7 @@
     <header>
         <!---navigation bar and links-->
         <nav>
-            <a href="#Home">
+            <a href="index.html">
                 <img src="assets/icons/home-icon-silhouette(1).png" alt="home">
                 <p>Home</p>
             </a>
@@ -128,28 +128,31 @@
             <h2>Where to <strong>FIND US</strong></h2>
             <div class="container">
                 <div class="displayMap">
-                    <h1>MAP WILL COME <br>here</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.096022620113!2d-1.7043397079148108!3d6.194376033669807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdc65753c065bf3%3A0x1d547b9f9c1041b1!2sCofkans%20Hotel!5e0!3m2!1sen!2sgh!4v1768554554600!5m2!1sen!2sgh"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="locationCard">
                     <img class="locationImage" src="assets/images/locationimage.jpg" alt="location">
-                    <h2>Adwoa's Cuisine - Obuasi</h2>
+                    <h4>Adwoa's Cuisine - Obuasi</h4>
                     <div class="ratings">
                         <b>4.7</b>
                         <div class="stars">
-                            <img src="assets/icons/star (4).png" alt="star">
-                            <img src="assets/icons/star (4).png" alt="star">
-                            <img src="assets/icons/star (4).png" alt="star">
-                            <img src="assets/icons/star (4).png" alt="star">
-                            <img src="assets/icons/left-half-star (1).png" alt="star">
+                            <img src="assets/icons/star (6).png" alt="star">
+                            <img src="assets/icons/star (6).png" alt="star">
+                            <img src="assets/icons/star (6).png" alt="star">
+                            <img src="assets/icons/star (6).png" alt="star">
+
                         </div>
                     </div>
                     <div class="locationDetails">
-                        20 Janes Street, Abompe,Obuasi
+                        <p>123 Main Street, Obuasi, Ghana</p>
                     </div>
                     <div class="contact">
-                        <!--get icon of clock in white color-->
+                        <img src="assets/icons/clock.png" alt="">
                         <span>Open until 10pm</span>
-                        <!--get icon of phone-->
+                        <img src="assets/icons/telephone-handle-silhouette.png" alt="">
                         <span>023 453 2423</span>
                     </div>
                     <div class="buttons">
@@ -160,6 +163,112 @@
             </div>
 
         </section>
+
+        <!---===========testimonials-section=========-->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <p class="subtitle">Real feedback from people who trust our work</p>
+
+
+            <div class="slider">
+                <div class="slides">
+
+                    <div class="testimonial-card active">
+                        <p class="message">
+                            “Absolutely delicious!”
+                            “The food was fresh, flavorful, and beautifully presented. This has quickly become my
+                            favorite place to eat.”
+                        </p>
+                        <div class="client">
+                            <img src="assets/images/person1.jpg" alt="Client">
+                            <div>
+                                <h4>John Mensah</h4>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="message">“Great food and amazing service.”
+                            “From the moment we walked in, we felt welcomed. The staff was friendly and the meals were
+                            served hot and on time.”
+                        </p>
+                        <div class="client">
+                            <img src="assets/images/person2.jpg" alt="Client">
+                            <div>
+                                <h4>James Boateng</h4>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="message">
+                            “A perfect spot for family dinners.”
+                            “The atmosphere is calm and the food appeals to both adults and kids. Everyone left happy
+                            and satisfied.”
+                        </p>
+                        <div class="client">
+                            <img src="assets/images/person3.jpg" alt="Client">
+                            <div>
+                                <h4>Stella Opoku</h4>
+                                <span>Teacher</span>
+                            </div>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="message">
+                            “Consistently excellent.”
+                            “I’ve ordered several times and the quality never drops. The flavors are rich and portions
+                            are generous.”
+                        </p>
+                        <div class="client">
+                            <img src="assets/images/person4.jpg" alt="Client">
+                            <div>
+                                <h4>Joyce Mensah</h4>
+                                <span>Student</span>
+                            </div>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="message">
+                            “Highly recommended!”
+                            “If you’re looking for great taste, good prices, and a relaxing environment, this restaurant
+                            is the place to be.”
+                        </p>
+                        <div class="client">
+                            <img src="assets/images/person5.jpg" alt="Client">
+                            <div>
+                                <h4>Christian Adjei</h4>
+                                <span>Engineer</span>
+                            </div>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+
+                </div>
+
+                <button class="nav prev">&#10094;</button>
+                <button class="nav next">&#10095;</button>
+            </div>
+        </section>
+
+        <!---===========contact-section=========-->
+        <section class="contactSection" id="Contact">
+            <h2>Get in <strong>TOUCH</strong></h2>
+            <p class="subtitle">We would love to hear from you!</p>
+            <form action="#" class="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form  >
+
+
     </div>
     <!--link to javascript--->
     <script src="js/main.js"></script>
