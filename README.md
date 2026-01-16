@@ -4,7 +4,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -13,15 +12,10 @@
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-[](screenshot.png)
+![](screenshot.png)
 
 ### Links
 
