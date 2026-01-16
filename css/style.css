@@ -1,0 +1,373 @@
+/* link to fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Remingtoned";
+    src: url("../assets/fonts/remingtoned_type/Remingtoned\ Type.ttf") format("truetype");
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "Poppins";
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --main-color: #e77d22;
+    --second-color: #8b4513;
+    --black-color: #2f3640;
+    --white-color: #f5e8e8f8;
+    --other-color: #37ca37;
+    --heading-size: 3.4em;
+    --text-size: 1.23em;
+    --medium-size: 2em
+}
+
+/*--container holding the whole page-*/
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+/*--the navigation bar, links and logo secton-*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 34;
+}
+
+/*---navigation bar and links--*/
+nav {
+    background-color: var(--main-color);
+    width: 55%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 54;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 4px solid var(--second-color);
+    border-left: 4px solid var(--second-color);
+    border-right: 4px solid var(--second-color);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+nav a img {
+    width: 30px;
+}
+
+nav a p {
+    color: var(--white-color);
+    font-size: var(--text-size);
+}
+
+nav a:hover {
+    border: 3px solid var(--second-color);
+    background-color: #ffffff8f;
+}
+
+/*--logo of restuaratn-*/
+.restaurant-logo {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: -78px;
+    z-index: 54;
+    cursor: pointer;
+}
+
+.restaurant-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: 4s rotate infinite;
+}
+
+/*---=============home-page=============--*/
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-10px) scale(2.1);
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../assets/images/background3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+
+    z-index: -4;
+    animation: 20s backgroundChange infinite;
+
+}
+
+.home h1 {
+    font-size: var(--heading-size);
+    color: #fff;
+}
+
+.home p {
+    color: #fff;
+    font-size: var(--text-size);
+    margin: 15px auto 45px;
+}
+
+.home a {
+    padding: 12px 30px;
+    font-size: var(--medium-size);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--main-color);
+}
+
+.home a:hover {
+    background-color: var(--second-color);
+    transform: scale(1.2);
+}
+
+/*---==============about-section============--*/
+.wrapper .aboutSection {
+    width: 100%;
+    background-color: var(--second-color);
+    padding: 2rem;
+    z-index: 23;
+    padding-bottom: 3.1rem;
+
+}
+
+.aboutSection h2 {
+    font-size: calc(var(--heading-size) - 0.7em);
+    color: #ffff;
+    margin: 30px auto;
+    text-align: center;
+    z-index: 67;
+    text-align: center;
+}
+
+.aboutSection h2 img {
+    width: 40px;
+}
+
+.aboutSection .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2em;
+}
+
+.aboutSection .row .imagesection {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.row .imagesection img {
+    width: 45%;
+    height: 380px;
+    cursor: pointer;
+    object-fit: cover;
+    transform: rotate(-20deg);
+}
+
+.row .imagesection img:hover {
+    transform: scale(1.1);
+}
+
+.aboutSection .row .textsection {
+    width: 43%
+}
+
+.textsection p {
+    font-size: var(--text-size);
+    color: #fff;
+}
+
+
+/*-=============services-section==========*/
+.servicesSection {
+    width: 100%;
+    padding: 2rem 1%;
+     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/servicesbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+
+}
+
+.servicesSection h2 {
+    font-size: calc(var(--heading-size) - 0.7em);
+    color: #fff;
+    margin: 30px auto;
+    text-align: center;
+    z-index: 67;
+    text-align: center;
+}
+
+.servicesSection h2 strong {
+    color: var(--second-color);
+    background-color: #fff;
+    padding:5px 8px;
+}
+
+.servicesSection .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.servicesSection .container .service {
+    width: 30%;
+    margin-top: 1.12em;
+    border-radius: 15px;
+    background-color: rgba(31, 19, 7, 0.911);
+    padding: 12px;
+    display: flex;
+    height: 56vh;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    animation: textshow both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 100vh;
+}
+
+.servicesSection .container .service:hover {
+    background-color: #612e02b9;
+}
+
+.servicesSection .container .service img {
+    width: 40px;
+}
+
+.servicesSection .container .service h3 {
+    color:var(--main-color);
+    font-size: var(--medium-size);
+    margin: 10px auto;
+}
+
+.servicesSection .container .service p {
+    color: var(--white-color);
+    font-size: var(--text-size);
+    text-align: center;
+}
+
+/*---==============location-section============--*/
+
+.locationSection {
+    width: 100%;
+    padding: 2rem 1%;
+
+}
+
+.locationSection h2 {
+    font-size: calc(var(--heading-size) - 0.7em);
+    color:#000;
+    margin: 30px auto;
+    text-align: center;
+    z-index: 67;
+    text-align: center;
+}
+
+.locationSection h2 strong {
+    color: var(--second-color);
+    padding:5px 8px;
+}
+
+.locationSection .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.locationSection .container .displayMap {
+    width: 61%;
+   
+}
+.locationSection .container .locationCard{
+    width:34%;
+    padding:1em;
+    border-radius: 2em;
+    background-color: var(--main-color);
+}
+.container .locationCard .locationImage{
+    width:100%;
+    object-fit: cover;
+    height: 340px;
+    border-radius: 2em 2em 0px 0px;
+    margin-bottom: 10px;
+}
+
+.locationCard h2{
+    font-size: 1.1em;
+    color:#fff;
+}
+.locationCard .ratings{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
