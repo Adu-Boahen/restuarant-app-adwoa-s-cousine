@@ -296,6 +296,46 @@ nav a:hover {
     text-align: center;
 }
 
+/*---==============food-gallery============--*/
+.foodGallery{
+    width: 100%;
+    padding: 2rem 1%;
+    background-color: var(--white-color);
+}
+.foodGallery h2 {
+    font-size: calc(var(--heading-size) - 0.7em);
+    color:#000;
+    margin: 30px auto;
+    text-align: center;
+    z-index: 67;
+    text-align: center;
+}
+.foodGallery h2 strong {
+    background-color: var(--second-color);
+    padding:5px 8px;
+}
+.foodGallery .galleryContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.foodGallery .galleryContainer .foodImage{
+    width: 23%;
+    cursor: pointer;                
+}
+.foodGallery .galleryContainer .foodImage img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.foodGallery .galleryContainer .foodImage img:hover{     
+    transform: scale(1.1);
+}
+
 /*---==============location-section============--*/
 
 .locationSection {

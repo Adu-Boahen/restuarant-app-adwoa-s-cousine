@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---link to stylesheets-->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Order</title>
+</head>
+
+<body>
+
+    <header>
+        <!---navigation bar and links-->
+        <nav>
+            <a href="index.html">
+                <img src="assets/icons/home-icon-silhouette(1).png" alt="home">
+                <p>Home</p>
+            </a>
+            <a href="index.html#About">
+                <img src="assets/icons/food.png" alt="about">
+                <p>About</p>
+            </a>
+            <a href="index.html#location">
+                <img src="assets/icons/location.png" alt="location">
+                <p>location</p>
+            </a>
+            <a href="menu.html">
+                <img src="assets/icons/menu.png" alt="menu">
+                <p>Menu</p>
+            </a>
+            <a href="order.html">
+                <img src="assets/icons/bag.png" alt="order">
+                <p>Order</p>
+            </a>
+
+            <!---logo of restuarant-->
+            <div class="restaurant-logo">
+                <img src="assets/icons/logo4.png" alt="logo">
+            </div>
+        </nav>
+
+    </header>
+
+    <!----=======order-page=========-->
+    <div class="order-page">
+        <h1>Your Order</h1>
+        <p>Your selected items will appear here.</p>
+
+        <!--show-order-->
+        <div class="container">
+            <div class="orderList">
+                <!--order items will be displayed here-->
+                <div class="orderitem">
+                    <div class="image">
+                        <img src="assets/images/food1.jpeg" alt="food item">
+                    </div>
+                    <div class="desc">
+                        <p class="first">Item Name</p>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <p class="itemPrice">Price: $10.00</p>
+                    </div>
+                    <div class="btns">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div class="orderitem">
+                    <div class="image">
+                        <img src="assets/images/food4.jpeg" alt="food item">
+                    </div>
+                    <div class="desc">
+                        <p class="first">Item Name</p>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <p class="itemPrice">Price: $10.00</p>
+                    </div>
+                    <div class="btns">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div class="orderitem">
+                    <div class="image">
+                        <img src="assets/images/food2.jpeg" alt="food item">
+                    </div>
+                    <div class="desc">
+                        <p class="first">Item Name</p>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <p class="itemPrice">Price: $10.00</p>
+                    </div>
+                    <div class="btns">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div class="orderitem">
+                    <div class="image">
+                        <img src="assets/images/food9.jpeg" alt="food item">
+                    </div>
+                    <div class="desc">
+                        <p class="first">Item Name</p>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <p class="itemPrice">Price: $10.00</p>
+                    </div>
+                    <div class="btns">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div class="orderitem">
+                    <div class="image">
+                        <img src="assets/images/food11.jpeg" alt="food item">
+                    </div>
+                    <div class="desc">
+                        <p class="first">Item Name</p>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        <p class="itemPrice">Price: $10.00</p>
+                    </div>
+                    <div class="btns">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ordersummary">
+                <div class="top">
+                    <h3>ORDER SUMMARY</h3>
+
+                    <div class="summary-details">
+                        <div>
+                            <p>Subtotal:</p>
+                            <p> $30.00</p>
+                        </div>
+                        <div>
+                            <p>Delivery Fee: </p>
+                            <p>$2.70</p>
+                        </div>
+                        <div>
+                            <p>Total:</p>
+                            <p> $32.70</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <input type="text" placeholder="Delivery address">
+                    <select required>
+                        <option value="">Payment Method</option>
+                        <option>Paypal</option>
+                        <option>MTN Momo</option>
+                        <option>Vodaphone Cash</option>
+                    </select>
+                    <input type="text" placeholder="Special Instructions(optional)">
+
+                    <button>Place Order</button>
+                </div>
+
+            </div>
+
+
+            <!--if there is no order-->
+            <!------------
+        <div class="showOrder">
+            <p>No items in your order yet.</p>
+        </div>
+        ------------->
+        </div>
+
+
+</body>
+
+</html>
