@@ -1,0 +1,197 @@
+/* link to fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Remingtoned";
+    src: url("../assets/fonts/remingtoned_type/Remingtoned\ Type.ttf") format("truetype");
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "Poppins";
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --main-color: #e77d22;
+    --second-color: #8b4513;
+    --black-color: #2f3640;
+    --white-color: #f5e8e8f8;
+    --other-color: #37ca37;
+    --heading-size: 3.4em;
+    --text-size: 1.23em;
+    --medium-size: 2em
+}
+
+/*--the navigation bar, links and logo secton-*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 34;
+}
+
+/*---navigation bar and links--*/
+nav {
+    background-color: var(--main-color);
+    width: 55%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 54;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 4px solid var(--second-color);
+    border-left: 4px solid var(--second-color);
+    border-right: 4px solid var(--second-color);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+nav a img {
+    width: 30px;
+}
+
+nav a p {
+    color: var(--white-color);
+    font-size: var(--text-size);
+}
+
+nav a:hover {
+    border: 3px solid var(--second-color);
+    background-color: #ffffff8f;
+}
+
+/*--logo of restuaratn-*/
+.restaurant-logo {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: -78px;
+    z-index: 54;
+    cursor: pointer;
+}
+
+.restaurant-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: 4s rotate infinite;
+}
+
+/*--=====hero-section=====--*/
+.hero-menu {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url("../assets/images/menu.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content h1 {
+    color: var(--white-color);
+    font-size: var(--heading-size);
+    margin-bottom: 10px;
+    margin-top: 40px;
+}   
+.hero-content p {
+    color: var(--white-color);
+    font-size: var(--medium-size);
+}   
+
+/*--=====menu-section=====--*/
+.menuSection {
+    padding: 50px 10px;    
+    text-align: center;
+}
+.menuSection h2 {
+    font-size: 2.7em;
+    color: var(--black-color);
+    margin-bottom: 24px;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+    width:100%;
+}
+.menu-item {
+    width: 22.4%;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0,
+    0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 14px;
+}
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+.menu-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.menu-item h3 {
+    font-size: 1.2em;
+    color: var(--black-color);
+    margin: 3px auto;
+}
+.menu-item p {
+    font-size: 0.8em;
+    color: var(--black-color);
+    margin: 4px auto;
+}
+.menu-item .price {
+    font-size: 1.2em;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.menu-item button {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 0px 0px 3px 3px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+.menu-item button:hover {
+    background-color: var(--second-color);
+}   
